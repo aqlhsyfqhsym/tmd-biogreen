@@ -29,7 +29,7 @@
 **LinkedIn:** [Adam Firdaus](https://www.linkedin.com/in/adam-miller-firdaus/) 
 
 **Name:** Ariff Fikri 
-**Role:** Dev Ops
+**Role:** Dev Ops 
 **GitHub:** [@ariff-fikri](ariff-fikri)  
 **LinkedIn:** [Ariff Fikri](https://www.linkedin.com/in/ariff-fikri/) 
 
