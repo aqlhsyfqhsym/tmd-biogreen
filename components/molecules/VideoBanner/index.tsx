@@ -16,7 +16,7 @@ const VideoBanner: React.FC<VideoBannerProps> = ({
   return (
     <>
  <video
-  className="block w-full max-w-[1220px] h-auto object-center mx-auto outline-none border-none"
+  className="relative w-full max-w-[1220px] h-auto object-center mx-auto outline-none border-none"
   src={videoSrc}
   autoPlay
   muted
