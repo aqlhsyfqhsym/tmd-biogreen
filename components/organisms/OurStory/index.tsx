@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function SustainabilityStory() {
+export default function OurStory() {
   return (
     <div className=" flex flex-row items-center bg-white rounded-2xl shadow-md p-6 md:p-10 gap-6 w-[940px] mx-auto">
       <div className="flex-shrink-0">
