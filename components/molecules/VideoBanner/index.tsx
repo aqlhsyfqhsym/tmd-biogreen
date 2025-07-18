@@ -15,15 +15,15 @@ const VideoBanner: React.FC<VideoBannerProps> = ({
 }) => {
   return (
     <>
-       <video
-        className="relative w-[1440px] h-auto object-center mx-auto"
-        src={videoSrc}
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={poster}
-      />
+ <video
+  className="block w-full max-w-[1220px] h-auto object-center mx-auto outline-none border-none"
+  src={videoSrc}
+  autoPlay
+  muted
+  playsInline
+  poster={poster}
+/>
+
  
       </>
    );

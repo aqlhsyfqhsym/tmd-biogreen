@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Jost, Kumbh_Sans } from "next/font/google";
- 
-
 import "./globals.css";
+import Navbar from "@/components/organisms/navbar";
+import Footer from "@/components/organisms/footer";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -28,12 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${jost.variable} ${kumbhSans.variable} antialiased`}  >
-         <main className="bg-[#fff]"> 
-        {children}
-        </main>
-       </body>
+      <body className={`${jost.variable} ${kumbhSans.variable} antialiased`}>
+        <Navbar />
+        <main className="bg-[#fff]">{children}</main>
+        <Footer/>
+      </body>
     </html>
   );
 }
