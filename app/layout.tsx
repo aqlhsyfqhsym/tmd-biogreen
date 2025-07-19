@@ -28,9 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.variable} bg-[#F7FFFC] ${kumbhSans.variable} antialiased` } >
+      <body className={`${jost.variable}  ${kumbhSans.variable} antialiased` } >
         <Navbar />
-        <main className="bg-[#fff]">{children}</main>
+        <main className="bg-[#F7FFFC]">{children}</main>
         <Footer/>
       </body>
     </html>

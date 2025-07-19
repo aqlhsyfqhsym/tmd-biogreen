@@ -2,16 +2,17 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <div className=" flex flex-row items-center bg-white rounded-2xl shadow-md p-6 md:p-10 gap-6 w-[940px] mx-auto">
-      <div className="flex-shrink-0">
-        <Image
-          src="/images/home/fries.png"
-          alt="Frying oil used for recycling"
-          width={400}
-          height={300}
-          className=" object-cover"
-        />
-      </div>
+    <div className=" flex lg:flex-row  items-center bg-white rounded-2xl shadow-md p-6 md:p-10 gap-6 max-w-[940px]  mx-auto my-12">
+<div className="container   "> 
+      <Image
+        src="/images/home/fries.png"
+        alt="Frying oil used for recycling"
+        width={800}
+        height={610}
+        priority
+        className="object-cover w-full pb-5"
+      />
+</div>
       <div className="flex flex-col justify-between ">
         <div className="flex items-center gap-2  mb-2">
           <Image src="/icons/square.svg" alt="square" width={14} height={14} />
@@ -19,11 +20,11 @@ export default function OurStory() {
             Our Story
           </p>
         </div>
-        <h2 className="text-xl md:text-2xl font-semibold text-green-primary mb-4">
+        <h2 className="text-[clamp(1.25rem,2.5vw,1.75rem)] font-semibold text-green-primary mb-4">
           We transform waste into energy solutions. Our journey started with a
           vision for a sustainable future through innovative recycling.
         </h2>
-        <p className="text-gray-600 mb-6 font-kumbh font-normal text-xs">
+        <p className="text-gray-600 mb-6 font-kumbh font-normal text-[clamp(0.25rem,2.5vw,0.75rem)]">
           Our commitment to sustainability drives us to recycle used cooking oil
           into eco-friendly biofuels. With a focus on quality and efficiency, we
           ensure that every drop of oil collected contributes to a greener
