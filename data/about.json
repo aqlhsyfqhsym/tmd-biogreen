@@ -1,0 +1,85 @@
+{
+    "tmdDescription": "Tumpuan Megah Development Sdn Bhd (TMD) is a leading marine services company providing primarily ship-to-ship bunkering services in Malaysia.",
+    "statistics": [
+        {
+            "number": "2010",
+            "description": "In the industry since"
+        },
+        {
+            "number": ">150",
+            "description": "Employees and counting"
+        },
+        {
+            "number": ">300",
+            "description": "green entrepreneur agents"
+        },
+        {
+            "number": "35",
+            "description": "Depots across south east asia"
+        }
+    ],
+    "detailedDescription": [
+        "Tumpuan Megah Development Sdn Bhd (TMD) is a leading marine services provider in Malaysia, specializing in ship-to-ship bunkering. With 14 licensed vessels, we deliver high-quality fuels to ships in various ports across Peninsular and East Malaysia.",
+        "In response to the demand for sustainability, we are launching TMD BioGreen, focusing on eco-friendly fuel alternatives that meet regulations and promote a cleaner marine environment. Our mission is to lead in sustainable marine operations while providing excellent service."
+    ],
+    "tmdDescription2": "At TMD BioGreen, we are committed to innovation and sustainability, transforming waste into valuable resources for a cleaner future.",
+    "listings": [
+        {
+            "title": "Cutting-Edge Strategies for Unmatched Excellence",
+            "description": "At TMD BioGreen, we specialize in innovative solutions that convert waste into renewable energy. Our dedicated team is focused on enhancing efficiency and sustainability, ensuring that we meet the highest standards in the industry."
+        },
+        {
+            "title": "Leading Innovations for Exceptional Performance",
+            "description": "Our commitment to sustainability drives us to develop cutting-edge technologies that not only reduce waste but also promote a greener planet. We believe in creating a better future through responsible practices."
+        },
+        {
+            "title": "Pioneering Approaches for Outstanding Results",
+            "description": "With a focus on sustainability, TMD BioGreen is at the forefront of transforming waste into clean energy. Our innovative methods ensure that we contribute positively to the environment while delivering exceptional service."
+        }
+    ],
+    "visionMission": [
+        {
+            "title": "Our Vision",
+            "description": "Lorem ipsum dolor sit amet consectetur. Cursibus sed Ultricies feugiat eu congue ridiculus ut rhoncus. Sollicitudin adipiscing et porttitor dignissim. Mauris accumsan elit ut rhoncus.",
+            "mainIcon": "/icons/house.svg",
+            "decorativeIcon": "/icons/vision.svg"
+        },
+        {
+            "title": "Our Mission",
+            "description": "Lorem ipsum dolor sit amet consectetur. Cursibus sed Ultricies feugiat eu congue ridiculus ut rhoncus. Sollicitudin adipiscing et porttitor dignissim. Mauris accumsan elit ut rhoncus.",
+            "mainIcon": "/icons/house.svg",
+            "decorativeIcon": "/icons/mission.svg"
+        }
+    ],
+    "coreValues": {
+        "heading": "Core Values",
+        "description": "Our core values are the foundation of our mission, guiding us towards a future where innovation meets integrity. We believe in fostering a collaborative environment that encourages mutual trust and respect among all team members. At TMD BioGreen, every endeavour, we aim to empower communities and drive sustainable change. Our commitment to customer satisfaction ensures that we listen and adapt to the needs of those we serve, creating solutions that truly resonate. Together, we forge a brighter tomorrow through shared values and collective effort."
+    },
+    "coreValuesCards": [
+        {
+            "title": "Principles",
+            "description": "We believe in innovation and collaboration, guided by honesty to integrity, respect, transparency, and equality. Together we cultivate environment where every voice matters, leading to mutual success.",
+            "icon": "/icons/scale.svg"
+        },
+        {
+            "title": "Professionalism",
+            "description": "At TMD BioGreen, we commit to professionalism in every project. We aim for excellence through continuous improvement, lifelong learning, and professionalism means giving beyond expectations and building long-lasting every project.",
+            "icon": "/icons/house.svg"
+        },
+        {
+            "title": "Teamwork",
+            "description": "At TMD BioGreen, teamwork is at the heart of everything we do. We believe that collaboration with stakeholders and communities leads to innovative solutions that bring long-lasting perspective, making us stronger and more adaptable. Let's work together and achieve together.",
+            "icon": "/icons/checked.svg"
+        },
+        {
+            "title": "Customer Oriented",
+            "description": "At TMD BioGreen, we put our customers first. We listen to your needs and drive incredible solutions that truly resonate. We understand the power of innovation and commitment to excellence.",
+            "icon": "/icons/mission.svg"
+        },
+        {
+            "title": "Community Oriented",
+            "description": "At TMD BioGreen, we're all about community. We believe in giving back and making a positive impact. Our commitment focus on supporting our local communities, empowering people to take action. Together, we can create a thriving environment where everyone benefits.",
+            "icon": "/icons/vision.svg"
+        }
+    ]
+}
