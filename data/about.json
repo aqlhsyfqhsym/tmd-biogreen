@@ -64,22 +64,23 @@
         {
             "title": "Professionalism",
             "description": "At TMD BioGreen, we commit to professionalism in every project. We aim for excellence through continuous improvement, lifelong learning, and professionalism means giving beyond expectations and building long-lasting every project.",
-            "icon": "/icons/house.svg"
+            "icon": "/icons/professionalism.svg"
         },
         {
             "title": "Teamwork",
             "description": "At TMD BioGreen, teamwork is at the heart of everything we do. We believe that collaboration with stakeholders and communities leads to innovative solutions that bring long-lasting perspective, making us stronger and more adaptable. Let's work together and achieve together.",
-            "icon": "/icons/checked.svg"
+            "icon": "/icons/teamwork.svg"
         },
         {
             "title": "Customer Oriented",
             "description": "At TMD BioGreen, we put our customers first. We listen to your needs and drive incredible solutions that truly resonate. We understand the power of innovation and commitment to excellence.",
-            "icon": "/icons/mission.svg"
+            "icon": "/icons/customer.svg"
         },
         {
             "title": "Community Oriented",
             "description": "At TMD BioGreen, we're all about community. We believe in giving back and making a positive impact. Our commitment focus on supporting our local communities, empowering people to take action. Together, we can create a thriving environment where everyone benefits.",
-            "icon": "/icons/vision.svg"
+            "icon": "/icons/community.svg"
         }
-    ]
+    ],
+    "tmdDescription3": "Discover our latest projects and innovations in sustainable energy."
 }

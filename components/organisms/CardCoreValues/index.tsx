@@ -19,27 +19,29 @@ const CardCoreValues: React.FC<CardCoreValuesProps> = ({ coreValuesCards }) => {
                 {coreValuesCards.slice(0, 3).map((item, index) => (
                     <div 
                         key={index} 
-                        className="bg-[#0F402D] rounded-2xl p-6 text-white items-start"
+                        className="bg-[#0F402D] rounded-2xl p-6 text-white"
                     >
-                        {/* Icon */}
-                        <div className="mb-4">
-                            <Image 
-                                src={item.icon} 
-                                alt={item.title}
-                                width={40}
-                                height={40}
-                                className="w-22 h-22"
-                            />
-                        </div>
-                        
-                        {/* Content */}
-                        <div>
-                            <h3 className="text-4xl font-bold mb-3">
-                                {item.title}
-                            </h3>
-                            <p className="text-white/90 text-sm leading-relaxed">
-                                {item.description}
-                            </p>
+                        <div className="flex items-start gap-4">
+                            {/* Icon */}
+                            <div className="flex-shrink-0 mt-5">
+                                <Image 
+                                    src={item.icon} 
+                                    alt={item.title}
+                                    width={48}
+                                    height={48}
+                                    className="w-12 h-12"
+                                />
+                            </div>
+                            
+                            {/* Content Column */}
+                            <div className="flex-1">
+                                <h3 className="text-4xl font-bold mb-3">
+                                    {item.title}
+                                </h3>
+                                <p className="text-white/90 text-sm leading-relaxed">
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -50,27 +52,29 @@ const CardCoreValues: React.FC<CardCoreValuesProps> = ({ coreValuesCards }) => {
                 {coreValuesCards.slice(3, 5).map((item, index) => (
                     <div 
                         key={index + 3} 
-                        className="bg-[#0F402D] rounded-2xl p-6 text-white flex items-start gap-4"
+                        className="bg-[#0F402D] rounded-2xl p-6 text-white"
                     >
-                        {/* Icon */}
-                        <div className="flex-shrink-0">
-                            <Image 
-                                src={item.icon} 
-                                alt={item.title}
-                                width={40}
-                                height={40}
-                                className="w-10 h-10"
-                            />
-                        </div>
-                        
-                        {/* Content */}
-                        <div className="flex-1">
-                            <h3 className="text-4xl font-bold mb-3">
-                                {item.title}
-                            </h3>
-                            <p className="text-white/90 text-sm leading-relaxed">
-                                {item.description}
-                            </p>
+                        <div className="flex items-start gap-4">
+                            {/* Icon */}
+                            <div className="flex-shrink-0 mt-5">
+                                <Image 
+                                    src={item.icon} 
+                                    alt={item.title}
+                                    width={48}
+                                    height={48}
+                                    className="w-12 h-12"
+                                />
+                            </div>
+                            
+                            {/* Content Column */}
+                            <div className="flex-1">
+                                <h3 className="text-4xl font-bold mb-3">
+                                    {item.title}
+                                </h3>
+                                <p className="text-white/90 text-sm leading-relaxed">
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 ))}
