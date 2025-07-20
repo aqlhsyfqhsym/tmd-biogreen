@@ -6,6 +6,8 @@ import OurStoryCard from "@/components/organisms/OurStoryCard";
 import CTACard from "@/components/organisms/CTACard";
 import StepsCard from "@/components/organisms/StepsCard";
 import TabsCard from "@/components/organisms/TabsCard";
+import Accordion from "@/components/organisms/FAQAccordian";
+import SectionIntro from "@/components/molecules/SectionIntro";
 
 export default function Home() {
   return (
@@ -22,8 +24,17 @@ export default function Home() {
         <div className="h-[38rem] bg-green-primary flex items-end justify-center mt-32">
           <StepsCard />
         </div>
-      <TabsCard/>
+        <TabsCard />
       </div>
+      <section>
+        <SectionIntro
+          iconSrc="/icons/square.svg"
+          label="Frequently Asked Questions"
+          heading="Common Queries"
+          description="At TMD BioGreen, we provide clear answers to your questions. Our team assists with inquiries about our services and sustainability practices. Reach out for more info!"
+        />
+        <Accordion />
+      </section>
     </div>
   );
 }
