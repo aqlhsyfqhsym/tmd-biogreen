@@ -7,7 +7,7 @@ const accordionData = [
   {
     id: '1',
     title: 'What is your return policy?',
-    content: 'We offer a 30-day return policy on all items.',
+    content: 'Our recycling process significantly reduces waste and contributes to sustainable energy solutions. We ensure that every drop of oil collected is repurposed effectively, minimizing environmental impact.',
   },
   {
     id: '2',

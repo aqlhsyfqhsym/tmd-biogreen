@@ -32,7 +32,7 @@ const ImageTabButton: React.FC<ImageTabButtonProps> = ({
         width={120}     
         height={40}
         priority
-        className="w-full"
+        className="w-[250px] xl:w-full"
       />
 
      

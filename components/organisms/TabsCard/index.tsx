@@ -204,7 +204,7 @@ const TabsWithImageButtons: React.FC = () => {
   return (
     <div className="mx-auto flex flex-col">
       {/* Tabs */}
-      <div className="flex mb-6 overflow-x-auto bg-green-primary justify-center">
+      <div className="flex flex-col items-center gap-2 sm:flex-row mb-6 overflow-x-auto bg-green-primary justify-center">
         {tabs.map((tab) => (
           <ImageTabButton
             key={tab.name}
@@ -219,7 +219,7 @@ const TabsWithImageButtons: React.FC = () => {
       </div>
 
       {/* Card */}
-      <div className="bg-white shadow-xl rounded-2xl p-6 max-w-[1000px] mx-auto">
+      <section className="bg-white shadow-xl rounded-2xl p-6 mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab.name}
@@ -231,7 +231,7 @@ const TabsWithImageButtons: React.FC = () => {
             {activeTab.content}
           </motion.div>
         </AnimatePresence>
-      </div>
+      </section>
     </div>
   );
 };

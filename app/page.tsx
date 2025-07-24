@@ -8,6 +8,7 @@ import StepsCard from "@/components/organisms/StepsCard";
 import TabsCard from "@/components/organisms/TabsCard";
 import Accordion from "@/components/organisms/FAQAccordian";
 import SectionIntro from "@/components/molecules/SectionIntro";
+import SlickAbout from "@/components/organisms/SlickAbout";
 
 export default function Home() {
   return (
@@ -16,12 +17,12 @@ export default function Home() {
       <OurStory />
       <Abstract />
       <OurStoryCard />
-      <div className="relative">
-        <div className="absolute -top-24 left-0 right-0  ">
+      <div className="xl:relative">
+        <div className="absolute -top-24 left-0 right-0  hidden xl:block">
           <CTACard />
         </div>
 
-        <div className="h-[38rem] bg-green-primary flex items-end justify-center mt-32">
+        <div className="h-full md:h-[40rem] bg-green-primary flex items-end justify-center top-11 xl:mt-32">
           <StepsCard />
         </div>
         <TabsCard />
@@ -35,6 +36,20 @@ export default function Home() {
         />
         <Accordion />
       </section>
+      <section>
+        <SectionIntro
+          iconSrc="/icons/square.svg"
+          label="Latest Gallery"
+          heading={
+            <>
+              Discover our latest projects And
+              <br />
+              Innovations In Sustainable Energy.
+            </>
+          }
+        />
+      </section>
+      <SlickAbout />
     </div>
   );
 }
