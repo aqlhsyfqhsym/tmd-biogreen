@@ -88,9 +88,13 @@ const SlickAbout: React.FC = () => {
     '/images/slick/slick4.png',
   ];
 
-  return (
-    <div className="mt-12 mb-12">
-      <div className="your-class">
+return (
+  <div className="mt-12 mb-12">
+    <div className="relative">
+  <div className="absolute left-0 top-0 h-full w-16 z-10 bg-gradient-to-l from-[rgba(255,255,255,0.2)] to-white pointer-events-none" />
+  <div className="absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-[rgba(255,255,255,0.2)] to-white pointer-events-none" />
+
+       <div className="your-class">
         {images.map((imageSrc, index) => (
           <div key={index} className="px-2">
             <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
@@ -106,7 +110,9 @@ const SlickAbout: React.FC = () => {
         ))}
       </div>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default SlickAbout;

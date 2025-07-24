@@ -49,7 +49,7 @@ export default function Home() {
           }
         />
       </section>
-        <SlickAbout /> 
+      <SlickAbout />
     </div>
   );
 }
