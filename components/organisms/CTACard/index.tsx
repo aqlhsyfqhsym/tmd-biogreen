@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ContactBanner: React.FC = () => {
   return (
-    <section className="bg-[#0DB14B] px-12 py-8 max-w-[1000px] mx-auto  ">
+    <section className="bg-[#0DB14B] px-12 py-8   mx-auto  ">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Left Text Block */}
         <div>

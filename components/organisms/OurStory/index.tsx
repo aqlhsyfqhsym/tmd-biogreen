@@ -3,16 +3,16 @@ import Image from "next/image";
 export default function OurStory() {
   return (
     <div className=" flex lg:flex-row  items-center bg-white rounded-2xl shadow-md p-6 md:p-10 gap-6 max-w-[940px]  mx-auto my-12">
-<div className="container   "> 
-      <Image
-        src="/images/home/fries.png"
-        alt="Frying oil used for recycling"
-        width={800}
-        height={610}
-        priority
-        className="object-cover w-full pb-5"
-      />
-</div>
+      <div className="container   ">
+        <Image
+          src="/images/home/fries.png"
+          alt="Frying oil used for recycling"
+          width={800}
+          height={610}
+          priority
+          className="object-cover w-full pb-5"
+        />
+      </div>
       <div className="flex flex-col justify-between ">
         <div className="flex items-center gap-2  mb-2">
           <Image src="/icons/square.svg" alt="square" width={14} height={14} />

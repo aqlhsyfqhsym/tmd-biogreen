@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React, { ReactNode } from "react";
+import Image from "next/image";
 
 interface SectionIntroProps {
   iconSrc: string;
   label: string;
-  heading: string;
+heading: ReactNode;
   description?: string;
 }
 
@@ -28,9 +28,10 @@ const SectionIntro: React.FC<SectionIntroProps> = ({
       </h2>
 
       {description && (
-        <p className="text-gray-600 mb-6 font-kumbh font-normal text-[clamp(0.25rem,2.5vw,0.75rem)]">
-          {description}
-        </p>
+        <p
+          className="text-gray-600 mb-6 font-kumbh font-normal text-[clamp(0.25rem,2.5vw,0.75rem)] capitalize"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       )}
     </div>
   );

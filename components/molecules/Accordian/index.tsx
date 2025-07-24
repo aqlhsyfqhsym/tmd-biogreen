@@ -30,10 +30,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   }, [isOpen]);
 
   return (
-    <div className="border border-gray-300 rounded-md overflow-hidden transition-all duration-300">
+    <div className="border border-gray-300 rounded-3xl overflow-hidden transition-all duration-300 bg-[#00A99D]">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-4 text-left text-green-700 font-medium hover:bg-green-50 transition"
+        className="w-full flex items-center justify-between px-5 py-2 text-left text-sm text-white font-medium transition"
       >
         <span>{title}</span>
         <ChevronDown
@@ -48,7 +48,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         style={{ height: `${height}px` }}
         className="overflow-hidden transition-all duration-300 ease-in-out"
       >
-        <div className="px-4 pb-4 pt-2 text-gray-600">
+        <div className="px-4 pb-4 pt-2  text-white">
           {content}
         </div>
       </div>

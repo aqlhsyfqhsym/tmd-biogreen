@@ -50,3 +50,9 @@ body {
 .bg-green-light {
   background-color: #cce8df;
 }
+
+
+section {
+  margin: 40px auto;
+  max-width: 1200px;
+ }

@@ -30,7 +30,7 @@ export default function OurStoryCard() {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 xl:w-[1000px] mx-auto bg-white mb-24">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 xl:w-[1200px] mx-auto bg-white mt-0">
       {cardData.map((card, index) => (
         <Card
           key={index}
@@ -39,6 +39,6 @@ export default function OurStoryCard() {
           description={card.description}
         />
       ))}
-    </div>
+    </section>
   );
 }
