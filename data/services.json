@@ -1,0 +1,97 @@
+{
+    "coreValues": {
+        "heading": "Why Us?",
+        "heading2": "Refinery Process",
+        "heading3": "Endorsed by"
+    },
+    "tmdDescription": "Recycling oil is a smart choice for sustainability. Ensure your used oil is processed responsibly to protect the environment.",
+    "tmdDescription2": "Our company is focussed on different types of oil-based energy industries.",
+    "tmdDescription3": "This section showcases the endorsements and support from esteemed industry leaders and delighted clients, reflecting the trust and confidence they have in our innovative solutions.",
+    "whyUs": [
+        {
+            "title": "Unbeatable Value",
+            "icon": "/icons/star.png",
+            "description": "Discover unparalleled service offerings tailored to meet your needs. Our commitment to excellence ensures you receive the best solutions available."
+        },
+        {
+            "title": "Top-notch Standards",
+            "icon": "/icons/fire.png",
+            "description": "Our services prioritize quality, ensuring seamless interactions. Experience the difference with our dedicated support."
+        },
+        {
+            "title": "Worldwide Availability",
+            "icon": "/icons/earth.png",
+            "description": "We operate on a global scale, providing services that cater to diverse markets and client needs. Wherever you are, we are there for you."
+        },
+        {
+            "title": "Cutting-edge Solutions",
+            "icon": "/icons/rocket.png",
+            "description": "Stay ahead of the curve with our innovative approach. Our team leverages the latest technology to enhance your experience."
+        },
+        {
+            "title": "Cutting-edge Solutions",
+            "icon": "/icons/bulb.png",
+            "description": "We prioritize your needs, ensuring our solutions are not only effective but also user-friendly and accessible."
+        },
+        {
+            "title": "Insightful Analytics",
+            "icon": "/icons/graph.png",
+            "description": "Gain valuable insights through our data analytics, helping you make informed decisions that drive success."
+        }
+    ],
+    "refineryProcess": [
+        {
+            "title": "Fuels",
+            "icon": "/icons/house.svg",
+            "items": [
+                "Diesel Fuels",
+                "Fuel Oils",
+                "Heating Oils"
+            ]
+        },
+        {
+            "title": "Lubricants",
+            "icon": "/icons/house.svg",
+            "items": [
+                "Engine Oils",
+                "Hydraulic Oils",
+                "Transmission Fluids",
+                "Heat Transfer Oils",
+                "Brake Fluids",
+                "Coolants",
+                "Metal Working Fluids",
+                "Greases"
+            ]
+        },
+        {
+            "title": "Bio Energies",
+            "icon": "/icons/house.svg",
+            "items": [
+                "Biofuel Oils",
+                "Refined Vegetable Oils"
+            ]
+        }
+    ],
+    "steps": [
+    {
+      "step": "Step 1",
+      "title": "We Collect Waste Oil",
+      "icon": "/icons/waste.png"
+    },
+    {
+      "step": "Step 2",
+      "title": "Pre-Treatment",
+      "icon": "/icons/soap.png"
+    },
+    {
+      "step": "Step 3",
+      "title": "Refining Process",
+      "icon": "/icons/process.png"
+    },
+    {
+      "step": "Step 4",
+      "title": "End Products & Where They Go",
+      "icon": "/icons/lorry.png"
+    }
+  ]
+}
