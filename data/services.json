@@ -2,11 +2,19 @@
     "coreValues": {
         "heading": "Why Us?",
         "heading2": "Refinery Process",
-        "heading3": "Endorsed by"
+        "heading3": "Endorsed by",
+        "heading4": "Let’s Get In Touch"
     },
     "tmdDescription": "Recycling oil is a smart choice for sustainability. Ensure your used oil is processed responsibly to protect the environment.",
     "tmdDescription2": "Our company is focussed on different types of oil-based energy industries.",
     "tmdDescription3": "This section showcases the endorsements and support from esteemed industry leaders and delighted clients, reflecting the trust and confidence they have in our innovative solutions.",
+    "tmdDescription4": "Got questions or just want to chat? Reach out to us! We're here to help and would love to hear from you.",
+    "tmdDescription5": "Or feel free to reach out to any of our staff",
+    "tmdDescription6": "Discover our latest projects and innovations in sustainable energy.",
+    "formSection": {
+        "heading": "We are eager to hear your fantastic suggestions regarding TMDBiogreen.",
+        "description": "At TMDBiogreen, we value your feedback. Please share your thoughts, questions, or concerns with us. We're here to help!"
+    },
     "whyUs": [
         {
             "title": "Unbeatable Value",
@@ -92,6 +100,48 @@
       "step": "Step 4",
       "title": "End Products & Where They Go",
       "icon": "/icons/lorry.png"
+    }
+  ],
+  "contactInfo": [
+    {
+      "title": "Send Us Mail",
+      "type": "email",
+      "content": "admin@tmd-materials.com"
+    },
+    {
+      "title": "Visit Our Office",
+      "type": "address",
+      "content": [
+        "Level 10-01 Johor Bahru",
+        "2/1 Taman Molek,",
+        "81100 Johor Bahru,",
+        "Johor, Malaysia"
+      ]
+    },
+    {
+      "title": "Call Us Anytime",
+      "type": "phone",
+      "content": [
+        "Tel: +607 388 1838",
+        "Fax: +607 359 8660"
+      ]
+    }
+  ],
+  "staffContacts": [
+    {
+      "name": "Chung",
+      "phone": "013 3838219",
+      "image": "/images/contact/chung.png"
+    },
+    {
+      "name": "Eric",
+      "phone": "016 3233907",
+      "image": "/images/contact/eric.png"
+    },
+    {
+      "name": "Norhamila",
+      "phone": "011 1140 5447",
+      "image": "/images/contact/nur.png"
     }
   ]
 }
