@@ -9,7 +9,7 @@ import TabsCard from "@/components/organisms/TabsCard";
 import Accordion from "@/components/organisms/FAQAccordian";
 import SectionIntro from "@/components/molecules/SectionIntro";
 import SlickAbout from "@/components/organisms/SlickAbout";
-
+ 
 export default function Home() {
   return (
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
@@ -26,6 +26,7 @@ export default function Home() {
           <StepsCard />
         </div>
         <TabsCard />
+        
       </div>
       <section>
         <SectionIntro

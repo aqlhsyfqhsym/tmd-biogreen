@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import ImageTabButton from "@/components/molecules/ImageTabButton";
+import AbstractBg from "@/components/atoms/AbstractBg";
 
 interface Tab {
   name: string;
@@ -22,39 +23,39 @@ const tabs: Tab[] = [
         <Image
           src="/images/home/stratergy.png"
           alt="Strategy"
-          width={400}
+          width={300}
           height={410}
           priority
           className="w-full lg:w-6/12 h-full object-cover"
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-            TMD BioGreen’s strategy focuses on securing sustainable feedstocks,
-            investing in advanced refining technologies, and forming global
-            partnerships to scale biofuel production and reduce carbon
-            footprint.
+            TMD's strategy involves diversifying into the green energy sector
+            through the establishment of TMD BioGreen. This is driven by the
+            increasing demand for biofuels in the marine sector, indicating a
+            strategic response to market trends.
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"  
+              src="/icons/banks.svg"
               alt="Converting Waste Cooking Oil"
               width={24}
               height={24}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
-              <h3 className="font-semibold text-gray-900">
-                Transforms
-              </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          A key element of their strategy is converting waste to green energy, specifically focusing on used cooking oil (UCO) as a feedstock for biofuels
+              <h3 className="font-semibold text-gray-900">Transforms</h3>
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+                A key element of their strategy is converting waste to green
+                energy, specifically focusing on used cooking oil (UCO) as a
+                feedstock for biofuels
               </p>
             </div>
           </div>
 
-             <div className="flex items-start">
+          <div className="flex items-start">
             <Image
-              src="/icons/home.svg"  
+              src="/icons/home.svg"
               alt="Production of Sustainable Biofuel Products"
               width={24}
               height={24}
@@ -64,12 +65,14 @@ const tabs: Tab[] = [
               <h3 className="font-semibold text-gray-900">
                 A Sustainable Vision
               </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          Their belief that “Every drop of oil collected will be recycled to value-add for sustainable synergy production in the marine industry and energy sector” underpins their strategic vision for resource utilisation and value creation.
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+                Their belief that “Every drop of oil collected will be recycled
+                to value-add for sustainable synergy production in the marine
+                industry and energy sector” underpins their strategic vision for
+                resource utilisation and value creation.{" "}
               </p>
             </div>
           </div>
-
         </div>
       </div>
     ),
@@ -78,44 +81,39 @@ const tabs: Tab[] = [
     name: "Leading",
     defaultImage: "/images/default.svg",
     activeImage: "/images/active.svg",
-  content: (
+    content: (
       <div className="flex flex-col md:flex-row items-start gap-12">
         <Image
-          src="/images/home/stratergy.png"
+          src="/images/home/leading.png"
           alt="Strategy"
-          width={400}
+          width={300}
           height={410}
           priority
           className="w-full lg:w-6/12 h-full object-cover"
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-            TMD BioGreen’s strategy focuses on securing sustainable feedstocks,
-            investing in advanced refining technologies, and forming global
-            partnerships to scale biofuel production and reduce carbon
-            footprint.
+           Tumpuan Megah Development Sdn Bhd (TMD) is described as a leading marine services company in Malaysia, primarily providing ship-to-ship bunkering services. This established leadership in the marine sector provides a strong foundation for TMD BioGreen.
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"  
+              src="/icons/banks.svg"
               alt="Converting Waste Cooking Oil"
               width={24}
               height={24}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
-              <h3 className="font-semibold text-gray-900">
-                Transforms
-              </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          A key element of their strategy is converting waste to green energy, specifically focusing on used cooking oil (UCO) as a feedstock for biofuels
+              <h3 className="font-semibold text-gray-900">Marine Fuel Solutions</h3>
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+             TMD possesses significant experience and infrastructure in the fuel supply chain, positioning them as a knowledgeable player entering the biofuel market.
               </p>
             </div>
           </div>
 
-             <div className="flex items-start">
+          <div className="flex items-start">
             <Image
-              src="/icons/home.svg"  
+              src="/icons/home.svg"
               alt="Production of Sustainable Biofuel Products"
               width={24}
               height={24}
@@ -123,14 +121,13 @@ const tabs: Tab[] = [
             />
             <div>
               <h3 className="font-semibold text-gray-900">
-                A Sustainable Vision
+                Pioneering the Future of Biofuel Solutions
               </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          Their belief that “Every drop of oil collected will be recycled to value-add for sustainable synergy production in the marine industry and energy sector” underpins their strategic vision for resource utilisation and value creation.
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+              By proactively responding to the increasing demand for biofuels and establishing TMD BioGreen, they are demonstrating leadership in adapting to evolving industry needs and environmental concerns.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     ),
@@ -142,41 +139,36 @@ const tabs: Tab[] = [
     content: (
       <div className="flex flex-col md:flex-row items-start gap-12">
         <Image
-          src="/images/home/stratergy.png"
+          src="/images/home/cooking.png"
           alt="Strategy"
-          width={400}
+          width={300}
           height={410}
           priority
           className="w-full lg:w-6/12 h-full object-cover"
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-            TMD BioGreen’s strategy focuses on securing sustainable feedstocks,
-            investing in advanced refining technologies, and forming global
-            partnerships to scale biofuel production and reduce carbon
-            footprint.
+          TMD BioGreen's core solution is converting waste (primarily used cooking oil) into green energy in the form of biofuels
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"  
+              src="/icons/banks.svg"
               alt="Converting Waste Cooking Oil"
               width={24}
               height={24}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
-              <h3 className="font-semibold text-gray-900">
-                Transforms
-              </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          A key element of their strategy is converting waste to green energy, specifically focusing on used cooking oil (UCO) as a feedstock for biofuels
+              <h3 className="font-semibold text-gray-900">Converting Waste Cooking Oil</h3>
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+             TMD BioGreen repurposes used cooking oil into biofuels. This process collects and refines UCO for industries like aviation and marine, promoting sustainable alternatives to fossil fuels.
               </p>
             </div>
           </div>
 
-             <div className="flex items-start">
+          <div className="flex items-start">
             <Image
-              src="/icons/home.svg"  
+              src="/icons/home.svg"
               alt="Production of Sustainable Biofuel Products"
               width={24}
               height={24}
@@ -184,14 +176,13 @@ const tabs: Tab[] = [
             />
             <div>
               <h3 className="font-semibold text-gray-900">
-                A Sustainable Vision
+               Production of Sustainable Biofuel Products
               </h3>
-          <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          Their belief that “Every drop of oil collected will be recycled to value-add for sustainable synergy production in the marine industry and energy sector” underpins their strategic vision for resource utilisation and value creation.
+              <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
+             TMD BioGreen's refinery produces biofuel oils and refined vegetable oils. These "Bio Energies" serve as Sustainable Aviation Fuel, marine fuel, biodiesel feed, and burning fuel. They can reduce GHG emissions by up to 90% compared to commercial fuel.
               </p>
             </div>
           </div>
-
         </div>
       </div>
     ),
@@ -217,9 +208,11 @@ const TabsWithImageButtons: React.FC = () => {
           />
         ))}
       </div>
+       {/* <AbstractBg/> */}
 
       {/* Card */}
-      <section className="bg-white shadow-xl rounded-2xl p-6 mx-auto">
+      <section className="relative bg-white shadow-xl rounded-2xl p-6 mx-auto">
+      
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab.name}
