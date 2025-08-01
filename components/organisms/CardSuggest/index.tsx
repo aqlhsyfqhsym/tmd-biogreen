@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import services from '@/data/services.json';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CardSuggest: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -18,15 +20,34 @@ const CardSuggest: React.FC = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-        // You can add your form submission logic here
+
+        try {
+            const res = await fetch('https://formsubmit.co/ajax/adm@tmd-marinefuels.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (res.ok) {
+                toast.success('✅ Message sent successfully!');
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                toast.error('❌ Failed to send message. Try again later.');
+            }
+        } catch (err) {
+            console.error(err);
+            toast.error('🚨 Something went wrong.');
+        }
     };
 
     return (
         <div className="mt-12 mb-12">
+            <ToastContainer position="top-right" autoClose={3000} />
             <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-lg">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Left side - Text content */}
@@ -50,7 +71,7 @@ const CardSuggest: React.FC = () => {
                                         placeholder="Your Name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors text-black"
                                         required
                                     />
                                 </div>
@@ -61,7 +82,7 @@ const CardSuggest: React.FC = () => {
                                         placeholder="Your Email Address"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors text-black"
                                         required
                                     />
                                 </div>
@@ -73,7 +94,7 @@ const CardSuggest: React.FC = () => {
                                     value={formData.message}
                                     onChange={handleChange}
                                     rows={4}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors resize-vertical"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0DB14B] focus:border-transparent outline-none transition-colors resize-vertical text-black"
                                     required
                                 />
                             </div>

@@ -1,4 +1,4 @@
-import VideoBanner from "@/components/molecules/VideoBanner";
+import ImageBanner from "@/components/molecules/ImageBanner";
 import CardWhyUs from "@/components/organisms/CardWhyUs";
 import SlickCompany from "@/components/organisms/SlickCompany";
 import CardRefinery from "@/components/organisms/CardRefinery";
@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
-      <VideoBanner videoSrc="/video/biogreen_video.mp4" />
+      <ImageBanner imageSrc="/images/banner/banner_services.png" />
 
       <section>
         <MainTitle heading={services.coreValues.heading} />
