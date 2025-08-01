@@ -1,4 +1,4 @@
-import VideoBanner from "@/components/molecules/VideoBanner";
+import ImageBanner from "@/components/molecules/ImageBanner";
 import CardAbout from "@/components/organisms/CardAbout";
 import ListingAbout from "@/components/organisms/ListingAbout";
 import CardVisionMission from "@/components/organisms/CardVisionMission";
@@ -23,7 +23,7 @@ export default function About() {
   
   return (
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
-      <VideoBanner videoSrc="/video/biogreen_video.mp4" />
+      <ImageBanner imageSrc="/images/banner/banner_about.png" />
       <section>
         <p className="  text-green-primary text-2xl font-medium leading-relaxed mb-12">
           {about.tmdDescription}
