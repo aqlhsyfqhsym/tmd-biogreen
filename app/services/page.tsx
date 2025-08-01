@@ -8,8 +8,7 @@ import CardSuggest from "@/components/organisms/CardSuggest";
 import services from "@/data/services.json";
 import MainTitle from "@/components/atoms/Heading";
 import CardStep from "@/components/organisms/CardStep";
-import Image from "next/image";
-import Slicker from "@/components/organisms/SlickAbout";
+ import Slicker from "@/components/organisms/SlickAbout";
 import SectionIntro from "@/components/molecules/SectionIntro";
 
 export default function About() {
