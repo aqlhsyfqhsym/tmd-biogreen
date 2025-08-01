@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import ImageTabButton from "@/components/molecules/ImageTabButton";
-import AbstractBg from "@/components/atoms/AbstractBg";
-
+ 
 interface Tab {
   name: string;
   defaultImage: string;

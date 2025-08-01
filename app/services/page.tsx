@@ -5,15 +5,25 @@ import CardRefinery from "@/components/organisms/CardRefinery";
 import CardGetInTouch from "@/components/organisms/CardGetInTouch";
 import CardContact from "@/components/organisms/CardContact";
 import CardSuggest from "@/components/organisms/CardSuggest";
-import SlickFactory from "@/components/organisms/SlickFactory";
-import services from "@/data/services.json";
+ import services from "@/data/services.json";
 import MainTitle from "@/components/atoms/Heading";
 import CardStep from "@/components/organisms/CardStep";
 import Image from "next/image";
+import Slicker from "@/components/organisms/SlickAbout";
 
 export default function About() {
+
+    const factoryImages = [
+         '/images/slick/factory 1.png',
+         '/images/slick/factory 2.png',
+         '/images/slick/factory 3.png',
+         '/images/slick/factory 4.png',
+         '/images/slick/factory 1.png', 
+         '/images/slick/factory 2.png'
+    ];
+
   return (
-    <div className="max-w-none font-[family-name:var(--font-geist-sans)] min-h-screen">
+    <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
       <VideoBanner videoSrc="/video/biogreen_video.mp4" />
 
       <div className="xl:px-64 lg:px-40 md:px-20 sm:px-10 mt-12">
@@ -83,7 +93,7 @@ export default function About() {
       </div>
 
       {/* Factory Gallery Carousel */}
-      <SlickFactory />
+      <Slicker images={factoryImages} />
     </div>
   );
 }

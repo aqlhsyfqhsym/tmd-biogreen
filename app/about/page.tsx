@@ -3,15 +3,24 @@ import CardAbout from "@/components/organisms/CardAbout";
 import ListingAbout from "@/components/organisms/ListingAbout";
 import CardVisionMission from "@/components/organisms/CardVisionMission";
 import CardCoreValues from "@/components/organisms/CardCoreValues";
-import SlickAbout from "@/components/organisms/SlickAbout";
+import Slicker from "@/components/organisms/SlickAbout";
 import MainTitle from "@/components/atoms/Heading";
 import about from "@/data/about.json";
-import Image from "next/image";
-import SectionIntro from "@/components/molecules/SectionIntro";
+ import SectionIntro from "@/components/molecules/SectionIntro";
 import Cartoon from "@/components/atoms/Cartoon";
 import Cartoon2 from "@/components/atoms/Cartoon2";
 
 export default function About() {
+
+      const factoryImages = [
+     '/images/slick/slick2.png',
+    '/images/slick/slick3.png',
+    '/images/slick/slick4.png',
+    '/images/slick/slick2.png',
+    '/images/slick/slick3.png',
+    '/images/slick/slick4.png',
+  ];
+  
   return (
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
       <VideoBanner videoSrc="/video/biogreen_video.mp4" />
@@ -75,7 +84,7 @@ export default function About() {
         />
       </section>
         <Cartoon2 />
-      <SlickAbout />
+      <Slicker images={factoryImages} />
     </div>
   );
 }
