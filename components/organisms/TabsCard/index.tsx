@@ -29,7 +29,7 @@ const tabs: Tab[] = [
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-            TMD's strategy involves diversifying into the green energy sector
+            TMD&apos;s strategy involves diversifying into the green energy sector
             through the establishment of TMD BioGreen. This is driven by the
             increasing demand for biofuels in the marine sector, indicating a
             strategic response to market trends.
@@ -147,7 +147,7 @@ const tabs: Tab[] = [
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          TMD BioGreen's core solution is converting waste (primarily used cooking oil) into green energy in the form of biofuels
+          TMD BioGreen&apos;s core solution is converting waste (primarily used cooking oil) into green energy in the form of biofuels
           </p>
           <div className="flex items-start mb-4">
             <Image
@@ -178,7 +178,7 @@ const tabs: Tab[] = [
                Production of Sustainable Biofuel Products
               </h3>
               <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-             TMD BioGreen's refinery produces biofuel oils and refined vegetable oils. These "Bio Energies" serve as Sustainable Aviation Fuel, marine fuel, biodiesel feed, and burning fuel. They can reduce GHG emissions by up to 90% compared to commercial fuel.
+             TMD BioGreen&apos;s refinery produces biofuel oils and refined vegetable oils. These &quot;Bio Energies&quot; serve as Sustainable Aviation Fuel, marine fuel, biodiesel feed, and burning fuel. They can reduce GHG emissions by up to 90% compared to commercial fuel.
               </p>
             </div>
           </div>

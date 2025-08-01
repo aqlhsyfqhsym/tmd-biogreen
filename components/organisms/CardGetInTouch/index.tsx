@@ -34,7 +34,7 @@ const CardGetInTouch: React.FC = () => {
         }
     };
 
-    const renderContent = (content: string | string[], type: string) => {
+    const renderContent = (content: string | string[]) => {
         if (Array.isArray(content)) {
             return (
                 <div className="text-md text-gray-600">
@@ -58,7 +58,7 @@ const CardGetInTouch: React.FC = () => {
                             {card.title}
                         </h3>
                         <div className="text-gray-600">
-                            {renderContent(card.content, card.type)}
+                            {renderContent(card.content)}
                         </div>
                     </div>
                 ))}

@@ -28,7 +28,7 @@ const SlickCompany: React.FC = () => {
             slickScript.src = 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js';
             slickScript.onload = () => {
                 // Initialize slick with center mode for company logos
-                (window as any).$('.company-slider').slick({
+                (window as typeof window & { $: (selector: string) => { slick: (options: Record<string, unknown>) => void } }).$('.company-slider').slick({
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToShow: 3,
