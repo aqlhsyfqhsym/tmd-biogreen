@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import ImageTabButton from "@/components/molecules/ImageTabButton";
- 
+
 interface Tab {
   name: string;
   defaultImage: string;
@@ -29,17 +29,17 @@ const tabs: Tab[] = [
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-            TMD&apos;s strategy involves diversifying into the green energy sector
-            through the establishment of TMD BioGreen. This is driven by the
-            increasing demand for biofuels in the marine sector, indicating a
-            strategic response to market trends.
+            TMD&apos;s strategy involves diversifying into the green energy
+            sector through the establishment of TMD BioGreen. This is driven by
+            the increasing demand for biofuels in the marine sector, indicating
+            a strategic response to market trends.
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"
+              src="/icons/home/butterfly.svg"
               alt="Converting Waste Cooking Oil"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
@@ -54,10 +54,10 @@ const tabs: Tab[] = [
 
           <div className="flex items-start">
             <Image
-              src="/icons/home.svg"
+              src="/icons/home/plant.svg"
               alt="Production of Sustainable Biofuel Products"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
@@ -92,30 +92,37 @@ const tabs: Tab[] = [
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-           Tumpuan Megah Development Sdn Bhd (TMD) is described as a leading marine services company in Malaysia, primarily providing ship-to-ship bunkering services. This established leadership in the marine sector provides a strong foundation for TMD BioGreen.
+            Tumpuan Megah Development Sdn Bhd (TMD) is described as a leading
+            marine services company in Malaysia, primarily providing
+            ship-to-ship bunkering services. This established leadership in the
+            marine sector provides a strong foundation for TMD BioGreen.
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"
+              src="/icons/home/fuel.svg"
               alt="Converting Waste Cooking Oil"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
-              <h3 className="font-semibold text-gray-900">Marine Fuel Solutions</h3>
+              <h3 className="font-semibold text-gray-900">
+                Marine Fuel Solutions
+              </h3>
               <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-             TMD possesses significant experience and infrastructure in the fuel supply chain, positioning them as a knowledgeable player entering the biofuel market.
+                TMD possesses significant experience and infrastructure in the
+                fuel supply chain, positioning them as a knowledgeable player
+                entering the biofuel market.
               </p>
             </div>
           </div>
 
           <div className="flex items-start">
             <Image
-              src="/icons/home.svg"
+              src="/icons/home/graph.svg"
               alt="Production of Sustainable Biofuel Products"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
@@ -123,7 +130,10 @@ const tabs: Tab[] = [
                 Pioneering the Future of Biofuel Solutions
               </h3>
               <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-              By proactively responding to the increasing demand for biofuels and establishing TMD BioGreen, they are demonstrating leadership in adapting to evolving industry needs and environmental concerns.
+                By proactively responding to the increasing demand for biofuels
+                and establishing TMD BioGreen, they are demonstrating leadership
+                in adapting to evolving industry needs and environmental
+                concerns.
               </p>
             </div>
           </div>
@@ -147,38 +157,47 @@ const tabs: Tab[] = [
         />
         <div>
           <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-          TMD BioGreen&apos;s core solution is converting waste (primarily used cooking oil) into green energy in the form of biofuels
+            TMD BioGreen&apos;s core solution is converting waste (primarily
+            used cooking oil) into green energy in the form of biofuels
           </p>
           <div className="flex items-start mb-4">
             <Image
-              src="/icons/banks.svg"
+              src="/icons/home/bin.svg"
               alt="Converting Waste Cooking Oil"
-              width={24}
-              height={24}
+              width={38}
+              height={38}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
-              <h3 className="font-semibold text-gray-900">Converting Waste Cooking Oil</h3>
+              <h3 className="font-semibold text-gray-900">
+                Converting Waste Cooking Oil
+              </h3>
               <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-             TMD BioGreen repurposes used cooking oil into biofuels. This process collects and refines UCO for industries like aviation and marine, promoting sustainable alternatives to fossil fuels.
+                TMD BioGreen repurposes used cooking oil into biofuels. This
+                process collects and refines UCO for industries like aviation
+                and marine, promoting sustainable alternatives to fossil fuels.
               </p>
             </div>
           </div>
 
           <div className="flex items-start">
             <Image
-              src="/icons/home.svg"
+              src="/icons/home/bio-fuel.svg"
               alt="Production of Sustainable Biofuel Products"
-              width={24}
-              height={24}
+              width={30}
+              height={30}
               className="mt-1 mr-3 flex-shrink-0"
             />
             <div>
               <h3 className="font-semibold text-gray-900">
-               Production of Sustainable Biofuel Products
+                Production of Sustainable Biofuel Products
               </h3>
               <p className="mb-4 text-gray-700 font-kumbh text-xs font-normal leading-5">
-             TMD BioGreen&apos;s refinery produces biofuel oils and refined vegetable oils. These &quot;Bio Energies&quot; serve as Sustainable Aviation Fuel, marine fuel, biodiesel feed, and burning fuel. They can reduce GHG emissions by up to 90% compared to commercial fuel.
+                TMD BioGreen&apos;s refinery produces biofuel oils and refined
+                vegetable oils. These &quot;Bio Energies&quot; serve as
+                Sustainable Aviation Fuel, marine fuel, biodiesel feed, and
+                burning fuel. They can reduce GHG emissions by up to 90%
+                compared to commercial fuel.
               </p>
             </div>
           </div>
@@ -207,11 +226,10 @@ const TabsWithImageButtons: React.FC = () => {
           />
         ))}
       </div>
-       {/* <AbstractBg/> */}
+      {/* <AbstractBg/> */}
 
       {/* Card */}
       <section className="relative bg-white shadow-xl rounded-2xl p-6 mx-auto">
-      
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab.name}
