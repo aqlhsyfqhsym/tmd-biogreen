@@ -25,7 +25,7 @@ export default function About() {
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
       <ImageBanner imageSrc="/images/banner/banner_about.png" />
       <section>
-        <p className="  text-green-primary text-2xl font-medium leading-relaxed mb-12">
+        <p className="text-green-primary text-2xl font-medium leading-relaxed mb-12">
           {about.tmdDescription}
         </p>
 

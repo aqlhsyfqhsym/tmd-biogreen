@@ -38,8 +38,10 @@ export default function About() {
         <p className="xl:px-52 lg:px-40 md:px-20 sm:px-10 text-green-primary text-2xl text-center font-medium leading-relaxed">
           {services.tmdDescription2}
         </p>
+        <div className="w-w-[300px] xl:max-w-[1000px] mx-auto">
         <CardRefinery cards={services.refineryProcess} />
         <CardStep steps={services.steps} />
+        </div>  
       </section>
 
       <section>

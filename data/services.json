@@ -50,7 +50,7 @@
     "refineryProcess": [
         {
             "title": "Fuels",
-            "icon": "/icons/house.svg",
+            "icon": "/icons/solution/fuel.svg",
             "items": [
                 "Diesel Fuels",
                 "Fuel Oils",
@@ -59,7 +59,7 @@
         },
         {
             "title": "Lubricants",
-            "icon": "/icons/house.svg",
+            "icon": "/icons/solution/lubricant.svg",
             "items": [
                 "Engine Oils",
                 "Hydraulic Oils",
@@ -73,7 +73,7 @@
         },
         {
             "title": "Bio Energies",
-            "icon": "/icons/house.svg",
+            "icon": "/icons/solution/energy.svg",
             "items": [
                 "Biofuel Oils",
                 "Refined Vegetable Oils"
@@ -81,25 +81,37 @@
         }
     ],
     "steps": [
-    {
+     {
       "step": "Step 1",
       "title": "We Collect Waste Oil",
-      "icon": "/icons/waste.png"
+      "icon": "/icons/waste.png",
+      "hoverStep": "Step 1",
+      "hoverTitle": "Waste Oil Collection",
+      "hoverLinkText": "Learn More ↗"
     },
     {
       "step": "Step 2",
       "title": "Pre-Treatment",
-      "icon": "/icons/soap.png"
+      "icon": "/icons/soap.png",
+      "hoverStep": "Step 2",
+      "hoverTitle": "Cleaning and Prepping",
+      "hoverLinkText": "Learn More ↗"
     },
     {
       "step": "Step 3",
       "title": "Refining Process",
-      "icon": "/icons/process.png"
+      "icon": "/icons/process.png",
+      "hoverStep": "Step 3",
+      "hoverTitle": "Purification Process",
+      "hoverLinkText": "Learn More ↗"
     },
     {
       "step": "Step 4",
       "title": "End Products & Where They Go",
-      "icon": "/icons/lorry.png"
+      "icon": "/icons/lorry.png",
+      "hoverStep": "Step 4",
+      "hoverTitle": "Final Products Distribution",
+      "hoverLinkText": "Learn More ↗"
     }
   ],
   "contactInfo": [

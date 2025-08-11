@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import Image from 'next/image';
+import React, { useEffect } from "react";
+import Image from "next/image";
 
 declare global {
   interface Window {
@@ -21,9 +21,9 @@ interface SlickAboutProps {
 }
 
 const loadStylesheet = (href: string): HTMLLinkElement => {
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.type = "text/css";
   link.href = href;
   document.head.appendChild(link);
   return link;
@@ -31,7 +31,7 @@ const loadStylesheet = (href: string): HTMLLinkElement => {
 
 const loadScript = (src: string): Promise<void> =>
   new Promise((resolve, reject) => {
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = src;
     script.async = true;
     script.onload = () => resolve();
@@ -41,13 +41,15 @@ const loadScript = (src: string): Promise<void> =>
 
 const initializeSlick = (): void => {
   const checkAndInit = (attempts = 0): void => {
-    const $slider = window.$('.your-class');
-    
-    if ($slider.length && !$slider.hasClass('slick-initialized')) {
+    const $slider = window.$(".your-class");
+
+    if ($slider.length && !$slider.hasClass("slick-initialized")) {
       try {
         $slider.slick({
           centerMode: true,
-          centerPadding: '60px',
+          centerPadding: "60px",
+          autoplay: true,
+          autoplaySpeed: 1000,
           slidesToShow: 3,
           responsive: [
             {
@@ -55,7 +57,9 @@ const initializeSlick = (): void => {
               settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: "40px",
+                autoplay: true,
+                autoplaySpeed: 1000,
                 slidesToShow: 3,
               },
             },
@@ -64,33 +68,43 @@ const initializeSlick = (): void => {
               settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: "40px",
+                autoplay: true,
+                autoplaySpeed: 1000,
                 slidesToShow: 1,
               },
             },
           ],
         });
       } catch (error) {
-        console.error('Slick initialization failed:', error);
+        console.error("Slick initialization failed:", error);
       }
     } else if ($slider.length === 0 && attempts < 10) {
       // DOM not ready yet, try again
       setTimeout(() => checkAndInit(attempts + 1), 200);
     }
   };
-  
+
   checkAndInit();
 };
 
 const SlickAbout: React.FC<SlickAboutProps> = ({ images }) => {
   useEffect(() => {
-    const slickCSS = loadStylesheet('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
-    const slickThemeCSS = loadStylesheet('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
+    const slickCSS = loadStylesheet(
+      "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    );
+    const slickThemeCSS = loadStylesheet(
+      "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    );
 
-    loadScript('https://code.jquery.com/jquery-1.11.0.min.js')
+    loadScript("https://code.jquery.com/jquery-1.11.0.min.js")
       .then(() => {
-        window.$ = window.jQuery = (window as typeof window & { jQuery: unknown }).jQuery as typeof window.$;
-        return loadScript('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+        window.$ = window.jQuery = (
+          window as typeof window & { jQuery: unknown }
+        ).jQuery as typeof window.$;
+        return loadScript(
+          "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        );
       })
       .then(() => {
         // Wait for React to render the DOM elements first
@@ -102,7 +116,8 @@ const SlickAbout: React.FC<SlickAboutProps> = ({ images }) => {
 
     return () => {
       if (document.head.contains(slickCSS)) document.head.removeChild(slickCSS);
-      if (document.head.contains(slickThemeCSS)) document.head.removeChild(slickThemeCSS);
+      if (document.head.contains(slickThemeCSS))
+        document.head.removeChild(slickThemeCSS);
     };
   }, [images]); // Add images dependency to reinitialize when images change
 

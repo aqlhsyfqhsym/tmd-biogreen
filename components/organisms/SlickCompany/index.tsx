@@ -42,6 +42,8 @@ const SlickCompany: React.FC = () => {
           .slick({
             centerMode: true,
             centerPadding: "60px",
+            autoplay: true,
+            autoplaySpeed: 1000,
             slidesToShow: 3,
             responsive: [
               {
@@ -49,6 +51,8 @@ const SlickCompany: React.FC = () => {
                 settings: {
                   arrows: false,
                   centerMode: true,
+                  autoplay: true,
+                  autoplaySpeed: 3000,
                   centerPadding: "40px",
                   slidesToShow: 3,
                 },
@@ -59,6 +63,8 @@ const SlickCompany: React.FC = () => {
                   arrows: false,
                   centerMode: true,
                   centerPadding: "40px",
+                  autoplay: true,
+                  autoplaySpeed: 3000,
                   slidesToShow: 1,
                 },
               },
@@ -93,7 +99,7 @@ const SlickCompany: React.FC = () => {
         <div className="absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-[rgba(255,255,255,0.2)] to-white pointer-events-none" />
         <div className="company-slider">
           {companyImages.map((imageSrc, index) => (
-            <div key={index} className="px-4">
+            <div key={index} className="px-10">
               <div className="relative w-full h-24 md:h-32 lg:h-40 flex items-center justify-center">
                 <Image
                   src={imageSrc}

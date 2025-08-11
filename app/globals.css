@@ -58,4 +58,13 @@ section {
   padding : 20px 0px;
  }
 
- 
+.scale-custom {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform-origin: top center;
+}
+
+.group:hover .scale-custom {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 2.1;
+}
