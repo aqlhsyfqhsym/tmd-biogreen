@@ -7,7 +7,7 @@ interface MainTitleProps {
 const MainTitle: React.FC<MainTitleProps> = ({ heading }) => {
   return (
     <>
-    <h2 className="pt-4 text-green-primary text-6xl font-bold text-center" dangerouslySetInnerHTML={{ __html: heading }} />
+    <h2 className="pt-4 text-green-primary text-6xl font-bold text-center text-[clamp(2.5rem,4vw,3rem)]" dangerouslySetInnerHTML={{ __html: heading }} />
     </>
   );
 };

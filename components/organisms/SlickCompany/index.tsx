@@ -99,7 +99,7 @@ const SlickCompany: React.FC = () => {
         <div className="absolute right-0 top-0 h-full w-16 z-10 bg-gradient-to-r from-[rgba(255,255,255,0.2)] to-white pointer-events-none" />
         <div className="company-slider">
           {companyImages.map((imageSrc, index) => (
-            <div key={index} className="px-10">
+            <div key={index} className="px-4 xl:px-10">
               <div className="relative w-full h-24 md:h-32 lg:h-40 flex items-center justify-center">
                 <Image
                   src={imageSrc}
