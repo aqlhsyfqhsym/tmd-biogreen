@@ -41,13 +41,13 @@
         {
             "title": "Our Vision",
             "description": "Lorem ipsum dolor sit amet consectetur. Cursibus sed Ultricies feugiat eu congue ridiculus ut rhoncus. Sollicitudin adipiscing et porttitor dignissim. Mauris accumsan elit ut rhoncus.",
-            "mainIcon": "/icons/house.svg",
+            "mainIcon": "/icons/vision-2.svg",
             "decorativeIcon": "/icons/vision.svg"
         },
         {
             "title": "Our Mission",
             "description": "Lorem ipsum dolor sit amet consectetur. Cursibus sed Ultricies feugiat eu congue ridiculus ut rhoncus. Sollicitudin adipiscing et porttitor dignissim. Mauris accumsan elit ut rhoncus.",
-            "mainIcon": "/icons/house.svg",
+            "mainIcon": "/icons/mission-2.svg",
             "decorativeIcon": "/icons/mission.svg"
         }
     ],

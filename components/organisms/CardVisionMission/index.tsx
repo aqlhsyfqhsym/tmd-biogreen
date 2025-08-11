@@ -18,7 +18,7 @@ const CardVisionMission: React.FC<CardVisionMissionProps> = ({ visionMission }) 
             {visionMission.map((item, index) => (
                 <div 
                     key={index} 
-                    className="bg-[#20B2AA] rounded-2xl p-16 text-white relative overflow-hidden"
+                    className="bg-[#20B2AA] rounded-2xl p-14 text-white relative overflow-hidden"
                 >
                     {/* Main icon above title */}
                     <div className="mb-6">
@@ -27,7 +27,7 @@ const CardVisionMission: React.FC<CardVisionMissionProps> = ({ visionMission }) 
                             alt={item.title}
                             width={48}
                             height={48}
-                            className="w-12 h-12"
+                            className="w-20 h-20"
                         />
                     </div>
                     

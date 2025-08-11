@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation"; 
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -13,6 +14,7 @@ const navItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="w-full bg-white sticky top-0 z-50">
@@ -32,15 +34,22 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6 items-center">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-md font-medium text-gray-700 hover:text-green-600 transition"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-md font-medium transition ${
+                    isActive
+                      ? "text-green-600 underline underline-offset-4"
+                      : "text-gray-700 hover:text-green-600"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -57,16 +66,23 @@ export default function Navbar() {
       {/* Mobile Nav */}
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 space-y-2 shadow-md">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setIsOpen(false)}
-              className="block text-sm font-medium text-gray-700 hover:text-green-600 transition"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className={`block text-sm font-medium transition ${
+                  isActive
+                    ? "text-green-600 underline underline-offset-4"
+                    : "text-gray-700 hover:text-green-600"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </header>

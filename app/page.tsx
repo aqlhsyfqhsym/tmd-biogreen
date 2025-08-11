@@ -1,5 +1,4 @@
-import Image from "next/image";
-import VideoBanner from "@/components/molecules/VideoBanner";
+ import VideoBanner from "@/components/molecules/VideoBanner";
 import OurStory from "@/components/organisms/OurStory";
 import Abstract from "@/components/atoms/abstract";
 import OurStoryCard from "@/components/organisms/OurStoryCard";
@@ -8,11 +7,25 @@ import StepsCard from "@/components/organisms/StepsCard";
 import TabsCard from "@/components/organisms/TabsCard";
 import Accordion from "@/components/organisms/FAQAccordian";
 import SectionIntro from "@/components/molecules/SectionIntro";
-import SlickAbout from "@/components/organisms/SlickAbout";
+import Slicker from "@/components/organisms/SlickAbout";
+// import TriviaModal from "@/components/organisms/Modal";
  
 export default function Home() {
+
+
+    const factoryImages = [
+     '/images/slick/slick2.png',
+    '/images/slick/slick3.png',
+    '/images/slick/slick4.png',
+    '/images/slick/slick2.png',
+    '/images/slick/slick3.png',
+    '/images/slick/slick4.png',
+  ];
+
   return (
     <div className="max-w-none font-[family-name:var(--font-geist-sans)] p-5 min-h-screen xl:px-32 xl:py-18 mx-auto ">
+            {/* <TriviaModal /> */}
+
       <VideoBanner videoSrc="/video/biogreen_video.mp4" />
       <OurStory />
       <Abstract />
@@ -50,7 +63,7 @@ export default function Home() {
           }
         />
       </section>
-      <SlickAbout />
+      <Slicker images={factoryImages} />
     </div>
   );
 }
