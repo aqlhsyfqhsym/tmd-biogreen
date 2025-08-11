@@ -34,11 +34,11 @@ const TriviaModal = () => {
 
         <div className="flex justify-center mt-4">
           <div className="w-24 h-24 relative">
-            <img
+            {/* <img
               src="/icons/character.svg"
               alt="Happy Character"
               className="absolute inset-0 w-full h-full object-contain"
-            />
+            /> */}
           </div>
         </div>
       </div>
