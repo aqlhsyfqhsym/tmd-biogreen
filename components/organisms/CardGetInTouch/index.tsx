@@ -49,6 +49,7 @@ const CardGetInTouch: React.FC = () => {
     };
 
     return (
+        <> 
         <div className="mt-20 mb-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 {services.contactInfo.map((card: ContactCard, index: number) => (
@@ -63,7 +64,9 @@ const CardGetInTouch: React.FC = () => {
                     </div>
                 ))}
             </div>
+            
         </div>
+        </>
     );
 };
 
