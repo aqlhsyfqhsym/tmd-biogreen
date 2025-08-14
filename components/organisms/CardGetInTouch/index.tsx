@@ -66,7 +66,6 @@ const CardGetInTouch: React.FC = () => {
             </div>
             
         </div>
-        
         </>
     );
 };

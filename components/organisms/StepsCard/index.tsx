@@ -9,7 +9,7 @@ const StepCard = () => {
     {
       stepNumber: 1,
       iconSrc: "/icons/fuel.svg",
-      iconSrcHover: "/icons/white-icon.svg",
+      iconSrcHover: "/icons/home/white-icon.svg",
       title: "Collection of UCO",
       description:
         "Collecting used cooking oil helps reduce waste and supports eco-friendly energy solutions. It’s a simple way to contribute to sustainability.",
@@ -17,7 +17,7 @@ const StepCard = () => {
     {
       stepNumber: 2,
       iconSrc: "/icons/refine.svg",
-      iconSrcHover: "/icons/white-icon.svg",
+      iconSrcHover: "/icons/home/white-icon.svg",
 
       title: "Refinery Processes",
       description:
@@ -26,7 +26,7 @@ const StepCard = () => {
     {
       stepNumber: 3,
       iconSrc: "/icons/paint.svg",
-      iconSrcHover: "/icons/white-icon.svg",
+      iconSrcHover: "/icons/home/white-icon.svg",
 
       title: "End of Products",
       description:
